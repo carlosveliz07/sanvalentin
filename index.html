@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz San Valentín ❤️</title>
+
+  <!-- Fuente poética -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <audio id="musica" src="/musica/Río Roma - Mi Persona Favorita (Letra  Lyrics).mp3" loop></audio>
+
+  <div class="container">
+    <h1>Feliz San Valentín</h1>
+    <h2>Osito te ama mucho 🐻❤️</h2>
+
+    <!-- Slider -->
+    <div class="slider-glow" id="sliderBox">
+      <div class="slider" id="slider">
+        <!--1--><img src="/imagenes/Oso.png" class="active">
+        <!--2--><img src="/imagenes/0028.jpeg">
+        <!--3--><img src="imagenes/002.jpeg">
+        <!--4--><img src="/imagenes/003.jpeg">
+        <!--5--><img src="/imagenes/0015.jpeg">
+        <!--6--><img src="/imagenes/0020.jpeg">
+        <!--7--><img src="/imagenes/0024.jpeg">
+        <!--8--><img src="/imagenes/0029.jpeg">
+        <!--9--><img src="/imagenes/0030.jpeg">
+        <!--10--><img src="/imagenes/0032.jpeg">
+        <!--11--><img src="/imagenes/0033.jpeg">
+        <!--12--><img src="/imagenes/0036.jpeg">
+        <!--13--><img src="/imagenes/0037.jpeg">
+        <!--14--><img src="/imagenes/0038.jpeg">
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons" id="buttons">
+      <button onclick="toggleMusica()">🎵 Música</button>
+      <button onclick="mostrarCarta()">💌 Carta</button>
+    </div>
+
+    <!-- Carta -->
+    <div class="hoja" id="carta">
+      Mi amor ❤️
+
+      <br><br>Mi osita hermosa, hoy se juntan dos fechas especiales para nosotros: nuestro 12 y el 14 de febrero. Son
+      días que
+      me recuerdan lo bonito que es compartir este cariño contigo y todo lo que hemos venido construyendo juntos.
+
+      <br><br>Desde que llegaste, mis días se sienten más alegres. A veces pienso que Dios escuchó una oración que un día le
+      pedí, porque tu llegada fue una sorpresa bonita y, a la vez, una bendición que agradezco mucho.
+
+      <br><br>Tal vez no siempre encuentro las palabras perfectas para expresar lo que siento, pero quiero que sepas que
+      te
+      quiero de verdad. Me gusta compartir contigo, reír juntos y seguir sumando momentos que se quedan en el corazón.
+
+      <br><br>Feliz 12, mi osita, y feliz San Valentín, mi amor. Gracias por estar conmigo y por compartir este cariño
+      tan
+      bonito.
+
+      <br><br>Con cariño,
+      <br><br>Tu osito 🐻❤️
+
+      <button onclick="volver()">Volver</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
