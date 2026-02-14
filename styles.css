@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #ffd1dc, #ff9a9e 40%, #fbc2eb 70%, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255,255,255,0.92);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 95%;
+  max-width: 520px;
+  box-shadow: 0 0 30px rgba(255, 77, 109, 0.4);
+}
+
+h1 { color: #ff2f68; }
+h2 { color: #ff6f91; margin-bottom: 10px; }
+
+/* Slider */
+.slider-glow {
+  padding: 10px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff4d6d, #ffd1dc);
+  box-shadow: 0 0 25px rgba(255, 77, 109, 0.8);
+  margin: 12px 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffd1dc; /* Fondo rosado */
+}
+
+.slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+button {
+  background: linear-gradient(135deg, #ff4d6d, #ff7a9c);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255,77,109,0.4);
+}
+
+/* Carta */
+.hoja {
+  display: none;
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.4rem;
+  color: #000;
+  text-align: left;
+  margin: auto;
+}
+
+.hoja button {
+  margin: 20px auto 0;
+  display: block;
+}
+
+/* Lluvia */
+.float {
+  position: fixed;
+  top: -30px;
+  font-size: 22px;
+  animation: caer 7s linear forwards;
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(120vh);
+    opacity: 0;
+  }
+}
